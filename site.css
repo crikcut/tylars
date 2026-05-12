@@ -279,11 +279,11 @@ a { color: inherit; text-decoration: none; }
   font-weight: 700;
 }
 .tb-value-xl {
-  font-size: 55px;
+  font-size: 50px;
   font-weight: 900;
   letter-spacing: -0.01em;
   line-height: 1;
-  margin-top: 16px;
+  margin-top: 0px;  /* 16px */
 }
 .tb-value-md {
   font-family: "JetBrains Mono", monospace;

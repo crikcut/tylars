@@ -1,22 +1,199 @@
-<html>
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="icon" href="favicon.png" type="image/png">
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tyler Larsen — Personal File</title>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="site.css" />
+</head>
+<body>
+  <div class="app">
+    <div class="stage">
+      <div class="frame-outer"></div>
+      <div class="frame-inner"></div>
 
+      <div class="reg reg-l">▶</div>
+      <div class="reg reg-r">◀</div>
 
-    <head>   </head>
-    <body>
-        <h1></h1>
-        <br>
-        <h1 style="text-align: center;"> hello world. </h1>
-        <br>
-        <br>
-        <br>
-        <h3 style="text-align: center;"> This is the personal site for Tyler Larsen,<br>
-             a machinist based in San Francisco, California.<br><br>
-             More content/info is coming soon. <br><br>
-             Thank you. </h3>
+      <div class="grid-labels grid-labels-top">
+        <span>1</span><span>2</span><span>3</span><span>4</span>
+      </div>
+      <div class="grid-labels grid-labels-left">
+        <span>A</span><span>B</span><span>C</span><span>D</span>
+      </div>
 
+      <!-- HEADER -->
+      <header class="header">
+        <div class="logo">
+          <svg viewBox="0 0 56 40" width="56" height="40" aria-label="TL">
+            <path d="M2 2 H44 L54 12 V38 H2 Z" fill="none" stroke="currentColor" stroke-width="1.6"></path>
+            <line x1="44" y1="2" x2="44" y2="12" stroke="currentColor" stroke-width="1"></line>
+            <line x1="44" y1="12" x2="54" y2="12" stroke="currentColor" stroke-width="1"></line>
+            <path d="M8 11 H24 M16 11 V32" stroke="currentColor" stroke-width="3" stroke-linecap="square" fill="none"></path>
+            <path d="M28 11 V32 H44" stroke="currentColor" stroke-width="3" stroke-linecap="square" fill="none"></path>
+          </svg>
+          <div class="logo-meta">
+            <div class="logo-pn">P/N&nbsp;TL-001</div>
+            <div class="logo-rev">REV 1A</div>
+          </div>
+        </div>
 
-    </body>
+        <div class="social">
+          <a href="https://linkedin.com/in/ty-lars" target="_blank" rel="noopener noreferrer" class="social-box">
+            <span class="social-glyph">
+              <img src="assets/linkedin.png" width="22" height="22" alt="LinkedIn" style="display:block" />
+            </span>
+            <span class="social-text">
+              <span class="social-label">LINKEDIN</span>
+              <span class="social-sub">/IN/TY-LARS</span>
+            </span>
+          </a>
+          <a href="mailto:hello@tylars.com" target="_blank" rel="noopener noreferrer" class="social-box">
+            <span class="social-glyph">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+                <rect x="2.5" y="5" width="19" height="14" rx="0.5"></rect>
+                <path d="M3 6 L12 13 L21 6"></path>
+              </svg>
+            </span>
+            <span class="social-text">
+              <span class="social-label">EMAIL</span>
+              <span class="social-sub">HELLO@TYLARS.COM</span>
+            </span>
+          </a>
+        </div>
+      </header>
 
+      <!-- DESCRIPTION -->
+      <section class="notes">
+        <div class="block-head">
+          <span class="block-no">01</span>
+          <span class="block-title">DESCRIPTION</span>
+          <span class="block-rule"></span>
+        </div>
+        <div class="description">
+          <p>
+            Add a paragraph or two here about what you've worked on
+            and accomplished — career highlights, signature projects,
+            the work you're proudest of.
+          </p>
+          <p>
+            A second paragraph can go here for context on what you're
+            focused on now, or the kinds of problems you like to solve.
+          </p>
+        </div>
+      </section>
+
+      <!-- PORTRAIT -->
+      <div class="portrait-wrap">
+        <svg class="portrait-svg" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+          <g stroke="rgba(0,0,0,0.18)" stroke-width="0.8" stroke-dasharray="2 4">
+            <line x1="800" y1="160" x2="800" y2="780"></line>
+            <line x1="580" y1="470" x2="1020" y2="470"></line>
+          </g>
+          <defs>
+            <clipPath id="portrait-clip">
+              <rect x="620" y="200" width="360" height="540"></rect>
+            </clipPath>
+          </defs>
+          <image href="assets/tyler.jpg" x="608" y="180" width="384" height="590"
+                 preserveAspectRatio="xMidYMid slice" clip-path="url(#portrait-clip)"></image>
+          <rect x="620" y="200" width="360" height="540" fill="none" stroke="#111" stroke-width="1.5"></rect>
+          <g stroke="#111" stroke-width="1.5">
+            <line x1="610" y1="200" x2="630" y2="200"></line>
+            <line x1="620" y1="190" x2="620" y2="210"></line>
+            <line x1="970" y1="200" x2="990" y2="200"></line>
+            <line x1="980" y1="190" x2="980" y2="210"></line>
+            <line x1="610" y1="740" x2="630" y2="740"></line>
+            <line x1="620" y1="730" x2="620" y2="750"></line>
+            <line x1="970" y1="740" x2="990" y2="740"></line>
+            <line x1="980" y1="730" x2="980" y2="750"></line>
+          </g>
+        </svg>
+      </div>
+
+      <!-- REVISION TABLE -->
+      <section class="revtable">
+        <div class="rev-head">
+          <span>REV</span><span>DATE</span><span>DESCRIPTION</span><span>BY</span>
+        </div>
+        <div class="rev-row">
+          <span>—</span><span>2013</span><span>HIRED PARAGON MACHINE WORKS</span><span>TL</span>
+        </div>
+        <div class="rev-row">
+          <span>A</span><span>2016</span><span>PLACEHOLDER — FILL IN LATER.</span><span>TL</span>
+        </div>
+        <div class="rev-row rev-row-current">
+          <span>1A</span><span>2026</span><span>IT LEAD - MILL TURN MACHINIST</span><span>TL</span>
+        </div>
+      </section>
+
+      <!-- MATERIAL · TOOLING -->
+      <section class="tooling">
+        <div class="block-head">
+          <span class="block-no">02</span>
+          <span class="block-title">MATERIAL · TOOLING</span>
+          <span class="block-rule"></span>
+        </div>
+        <ul class="spec-list">
+          <li><span>CAM</span><b>Fusion · Mastercam · Solidworks</b></li>
+          <li><span>MACHINES</span><b>Nakamura · Doosan · Kitamura</b></li>
+          <li><span>SYSTEMS</span><b>Linux · Active Directory · Microsoft 365</b></li>
+          <li><span>NET</span><b>Item 1 · Item 2 · Item 3</b></li>
+          <li><span>LOCATION</span><b>San Francisco, CA</b></li>
+        </ul>
+      </section>
+
+      <!-- TITLEBLOCK -->
+      <section class="titleblock">
+        <div class="tb-row tb-row-1">
+          <div class="tb-cell tb-project">
+            <div class="tb-label">PROJECT TITLE</div>
+            <div class="tb-value tb-value-xl">TYLER LARSEN</div>
+            <div class="tb-value tb-value-md">CNC MACHINIST · IT LEAD</div>
+          </div>
+          <div class="tb-cell tb-cell-narrow">
+            <div class="tb-label">SIZE</div>
+            <div class="tb-value tb-mono-big">A</div>
+          </div>
+          <div class="tb-cell tb-cell-narrow">
+            <div class="tb-label">REV</div>
+            <div class="tb-value tb-mono-big">1A</div>
+          </div>
+        </div>
+        <div class="tb-row tb-row-2">
+          <div class="tb-cell">
+            <div class="tb-label">DRAWN</div>
+            <div class="tb-value tb-value-sm">TL &nbsp;·&nbsp; 05·26</div>
+          </div>
+          <div class="tb-cell">
+            <div class="tb-label">CHECKED</div>
+            <div class="tb-value tb-value-sm">TL &nbsp;·&nbsp; 05·26</div>
+          </div>
+          <div class="tb-cell">
+            <div class="tb-label">SCALE</div>
+            <div class="tb-value tb-value-sm">1:1</div>
+          </div>
+          <div class="tb-cell">
+            <div class="tb-label">UNITS</div>
+            <div class="tb-value tb-value-sm">INCH</div>
+          </div>
+          <div class="tb-cell">
+            <div class="tb-label">SHEET</div>
+            <div class="tb-value tb-value-sm">1 / 1</div>
+          </div>
+        </div>
+      </section>
+
+      <div class="slug">
+        <span>© TYLER LARSEN 2026</span>
+      </div>
+    </div>
+  </div>
+
+  <script src="scale.js"></script>
+</body>
 </html>

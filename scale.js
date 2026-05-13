@@ -9,3 +9,11 @@
   fit();
   window.addEventListener('resize', fit);
 })();
+
+(function () {
+  var e = 'hello' + '@' + 'tylars.com';
+  var link = document.getElementById('email-link');
+  var display = document.getElementById('email-display');
+  if (link) link.href = 'mailto:' + e;
+  if (display) display.textContent = e;
+})();

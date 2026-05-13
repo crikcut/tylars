@@ -72,10 +72,17 @@ a { color: inherit; text-decoration: none; }
   letter-spacing: 0.1em;
   pointer-events: none;
 }
-.grid-labels-top { top: 4px; left: 32px; right: 32px; }
+.grid-labels-top    { top: 4px; left: 32px; right: 32px; }
+.grid-labels-bottom { bottom: 4px; left: 32px; right: 32px; }
 .grid-labels-left {
   top: 32px; bottom: 32px;
   left: 8px;
+  flex-direction: column;
+  align-items: center;
+}
+.grid-labels-right {
+  top: 32px; bottom: 32px;
+  right: 8px;
   flex-direction: column;
   align-items: center;
 }

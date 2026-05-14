@@ -331,3 +331,145 @@ a { color: inherit; text-decoration: none; }
   z-index: 5;
 }
 .slug-dot { font-size: 6px; opacity: 0.5; }
+
+/* ─── Mobile portrait / footer (hidden on desktop) ───────── */
+.portrait-mobile { display: none; }
+
+.footer-mobile {
+  display: none;
+  border: 1.5px solid var(--ink);
+  margin: 20px 20px 36px;
+  background: var(--paper);
+}
+.fm-top {
+  padding: 8px 12px 12px;
+  border-bottom: 1px solid var(--ink);
+}
+.fm-label {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 8.5px;
+  letter-spacing: 0.18em;
+  opacity: 0.55;
+  margin-bottom: 4px;
+}
+.fm-name {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  font-size: 42px;
+  font-weight: 900;
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+.fm-subtitle {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  opacity: 0.65;
+  margin-top: 4px;
+}
+.fm-email {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 12px;
+  border-bottom: 1px solid var(--ink);
+  color: var(--ink);
+}
+.fm-email-label {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  opacity: 0.55;
+}
+.fm-email-value {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 12px;
+  letter-spacing: 0.04em;
+}
+.fm-copy {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 9px;
+  letter-spacing: 0.16em;
+  opacity: 0.5;
+  padding: 8px 12px;
+}
+
+/* ─── Mobile layout ──────────────────────────────────────── */
+@media (max-width: 768px) {
+  body {
+    overflow-y: auto;
+    background: var(--paper);
+  }
+  .app {
+    position: static;
+    display: block;
+    min-height: 100vh;
+    background: var(--paper);
+  }
+  .stage {
+    position: static;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
+    overflow: visible;
+  }
+
+  .frame-outer,
+  .frame-inner,
+  .reg,
+  .grid-labels,
+  .portrait-svg,
+  .revtable,
+  .titleblock,
+  .slug { display: none; }
+
+  .header {
+    position: static;
+    height: auto;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0;
+  }
+  .logo {
+    padding: 14px 18px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+  }
+  .social { flex-direction: column; }
+  .social-box {
+    border-left: none;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    padding: 12px 18px;
+  }
+  .social-box:first-child { border-top: 1px solid rgba(0,0,0,0.2); }
+
+  .notes {
+    position: static;
+    width: auto;
+    padding: 24px 20px 0;
+  }
+
+  .portrait-wrap {
+    position: static;
+    pointer-events: auto;
+    padding: 20px;
+  }
+  .portrait-mobile {
+    display: block;
+    width: 100%;
+    max-width: 260px;
+    aspect-ratio: 2 / 3;
+    object-fit: cover;
+    object-position: center top;
+    margin: 0 auto;
+    border: 1.5px solid var(--ink);
+  }
+
+  .tooling {
+    position: static;
+    width: auto;
+    padding: 20px 20px 24px;
+  }
+
+  .footer-mobile { display: block; }
+}

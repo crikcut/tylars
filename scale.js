@@ -3,7 +3,7 @@
   if (!stage) return;
   function fit() {
     if (window.innerWidth <= 768) {
-      stage.style.transform = '';
+      stage.style.transform = 'none';
       return;
     }
     var sw = 1600, sh = 1000;

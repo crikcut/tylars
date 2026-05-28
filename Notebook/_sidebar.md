@@ -5,7 +5,7 @@
   * [Quick Reference](gcode/quick-reference)
 
 * **Canned Cycles**
-  * [Overview](canned/)
-  * [Single Point Thread](canned/singlepoint)
-  * [Roughing Cycles](canned/rough)
+  * [Overview](Canned/)
+  * [Single Point Thread](Canned/singlepoint)
+  * [Roughing Cycles](Canned/rough)
 

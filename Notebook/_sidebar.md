@@ -4,6 +4,8 @@
   * [Overview](gcode/)
   * [Quick Reference](gcode/quick-reference)
 
-* **CNC**
-  * [Overview](cnc/)
-  * [Coordinate Systems](cnc/coordinate-systems)
+* **Canned Cycles**
+  *[Overview](canned/)
+  *[Single Point Thread](canned/singlepoint)
+  *[Roughing Cycles](canned/rough)
+  

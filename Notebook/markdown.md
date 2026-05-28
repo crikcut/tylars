@@ -2,7 +2,7 @@
 
 Quick reference for writing notes in this notebook.
 
----
+
 
 ## Headings
 
@@ -13,7 +13,7 @@ Quick reference for writing notes in this notebook.
 #### H4 — minor heading
 ```
 
----
+
 
 ## Text Formatting
 
@@ -26,7 +26,7 @@ Quick reference for writing notes in this notebook.
 
 **bold** · *italic* · ~~strikethrough~~ · `inline code`
 
----
+
 
 ## Links & Images
 
@@ -36,7 +36,7 @@ Quick reference for writing notes in this notebook.
 ![alt text](image.png)
 ```
 
----
+
 
 ## Lists
 
@@ -50,7 +50,7 @@ Quick reference for writing notes in this notebook.
    1. nested item
 ```
 
----
+
 
 ## Blockquotes
 
@@ -61,7 +61,7 @@ Quick reference for writing notes in this notebook.
 
 > This is a blockquote.
 
----
+
 
 ## Tables
 
@@ -78,7 +78,7 @@ Alignment:
 |:---------|:--------:|--------:|
 ```
 
----
+
 
 ## Code Blocks
 
@@ -93,7 +93,7 @@ G01 X1.5 F20.
 
 Supported languages include: `gcode`, `bash`, `python`, `javascript`, `css`, `html`, `json`, `yaml`, `sql`
 
----
+
 
 ## Horizontal Rule
 
@@ -101,7 +101,7 @@ Supported languages include: `gcode`, `bash`, `python`, `javascript`, `css`, `ht
 ---
 ```
 
----
+
 
 ## Escape Characters
 
@@ -111,7 +111,7 @@ Prefix with `\` to render a literal markdown character:
 \* \# \` \_ \[ \]
 ```
 
----
+
 
 ## HTML in Markdown
 
@@ -124,11 +124,17 @@ Docsify passes raw HTML through, so you can mix it in freely:
 <sub>subscript</sub>
 ```
 
----
+
 
 ## Custom Highlight Classes
 
-Defined in `style.css`. Use as inline `<span>` elements.
+These are CSS classes defined in `style.css`. To use them, wrap the text you want to color in an HTML `<span>` tag with the class name — you can drop this directly into any `.md` file and Docsify will render it:
+
+```
+Here is some normal text with a <span class="hi-red">red highlighted word</span> in the middle.
+```
+
+The opening tag is `<span class="class-name">`, your text goes in the middle, and `</span>` closes it. You can wrap a single word or a whole phrase.
 
 ### Text color
 
@@ -165,7 +171,7 @@ Defined in `style.css`. Use as inline `<span>` elements.
 
 <span class="caution">caution block — use for warnings and gotchas</span>
 
----
+
 
 ## Docsify Sidebar Control
 
@@ -195,7 +201,7 @@ Place after the H1:
 ## This heading won't appear in the sidebar <!-- {docsify-ignore} -->
 ```
 
----
+
 
 ## Tags / Search
 
@@ -207,7 +213,7 @@ Any `#word` written anywhere in a markdown file is indexed by the search plugin.
 
 Tags are just plain text — no special syntax required beyond the `#` prefix.
 
----
+
 
 ## Adding a New Page
 

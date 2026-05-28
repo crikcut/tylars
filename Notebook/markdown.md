@@ -99,6 +99,7 @@ Supported languages include: `gcode`, `bash`, `python`, `javascript`, `css`, `ht
 
 ```
 ---
+
 ```
 
 
@@ -109,6 +110,7 @@ Prefix with `\` to render a literal markdown character:
 
 ```
 \* \# \` \_ \[ \]
+
 ```
 
 
@@ -122,6 +124,7 @@ Docsify passes raw HTML through, so you can mix it in freely:
 <kbd>Ctrl+S</kbd>           — keyboard key
 <sup>superscript</sup>
 <sub>subscript</sub>
+
 ```
 
 
@@ -132,6 +135,7 @@ These are CSS classes defined in `style.css`. To use them, wrap the text you wan
 
 ```
 Here is some normal text with a <span class="hi-red">red highlighted word</span> in the middle.
+
 ```
 
 The opening tag is `<span class="class-name">`, your text goes in the middle, and `</span>` closes it. You can wrap a single word or a whole phrase.

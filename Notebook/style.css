@@ -1,0 +1,289 @@
+/* ─── Variables ───────────────────────────────────────────────────── */
+:root {
+  --paper: #f6f3ec;
+  --paper-sidebar: #ede9df;
+  --ink: #111111;
+  --ink-soft: #555;
+  --accent: #c8392e;
+  --mono: "JetBrains Mono", monospace;
+
+  /* Docsify theme overrides */
+  --theme-color: var(--accent);
+  --sidebar-width: 280px;
+}
+
+/* ─── Paper texture ───────────────────────────────────────────────── */
+html {
+  background: var(--paper);
+  background-image:
+    radial-gradient(circle at 12% 22%, rgba(0,0,0,0.025) 0, transparent 38%),
+    radial-gradient(circle at 88% 78%, rgba(0,0,0,0.025) 0, transparent 38%),
+    repeating-linear-gradient(0deg, rgba(0,0,0,0.012) 0 1px, transparent 1px 4px);
+  background-attachment: fixed;
+}
+
+body {
+  background: transparent;
+  color: var(--ink);
+  font-family: var(--mono);
+}
+
+/* ─── Sidebar ─────────────────────────────────────────────────────── */
+.sidebar {
+  background: var(--paper-sidebar);
+  background-image:
+    repeating-linear-gradient(0deg, rgba(0,0,0,0.010) 0 1px, transparent 1px 4px);
+  background-attachment: fixed;
+  border-right: 1px solid rgba(0,0,0,0.15) !important;
+}
+
+.sidebar > h1.app-name {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  padding: 20px 18px 16px;
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  margin: 0;
+}
+
+.sidebar > h1.app-name a {
+  color: var(--ink);
+}
+
+.sidebar-nav {
+  font-family: var(--mono);
+  font-size: 12px;
+  letter-spacing: 0.04em;
+  padding: 8px 0;
+}
+
+.sidebar-nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar-nav ul li a {
+  color: var(--ink-soft);
+  padding: 5px 18px;
+  display: block;
+}
+
+.sidebar-nav ul li a:hover,
+.sidebar-nav ul li a.active {
+  color: var(--ink);
+  border-right: 2px solid var(--accent);
+  background: rgba(0,0,0,0.04);
+}
+
+.sidebar-nav > ul > li > p,
+.sidebar-nav > ul > li > strong {
+  font-size: 10px;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink);
+  opacity: 0.45;
+  padding: 14px 18px 4px;
+  display: block;
+  margin: 0;
+}
+
+/* ─── Search ──────────────────────────────────────────────────────── */
+.search {
+  border-bottom: 1px solid rgba(0,0,0,0.15);
+  padding: 10px 14px;
+  background: transparent;
+}
+
+.search input {
+  font-family: var(--mono);
+  font-size: 12px;
+  background: rgba(0,0,0,0.05);
+  border: 1px solid rgba(0,0,0,0.15);
+  border-radius: 2px;
+  color: var(--ink);
+  padding: 6px 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.search input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: none;
+}
+
+.search input::placeholder {
+  color: var(--ink);
+  opacity: 0.35;
+}
+
+.search .results-panel {
+  background: var(--paper-sidebar);
+  border: 1px solid rgba(0,0,0,0.15);
+  border-top: none;
+}
+
+.search .results-panel .matching-post {
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+/* ─── Content area ────────────────────────────────────────────────── */
+.content {
+  background: transparent;
+}
+
+.markdown-section {
+  max-width: 820px;
+  font-family: var(--mono);
+  font-size: 14px;
+  line-height: 1.75;
+  color: var(--ink);
+  padding: 40px 48px 80px;
+}
+
+/* ─── Typography ──────────────────────────────────────────────────── */
+.markdown-section h1,
+.markdown-section h2,
+.markdown-section h3,
+.markdown-section h4 {
+  font-family: var(--mono);
+  font-weight: 700;
+  color: var(--ink);
+  letter-spacing: -0.01em;
+}
+
+.markdown-section h1 {
+  font-size: 28px;
+  border-bottom: 1.5px solid var(--ink);
+  padding-bottom: 10px;
+  margin-bottom: 28px;
+}
+
+.markdown-section h2 {
+  font-size: 18px;
+  border-bottom: 1px solid rgba(0,0,0,0.2);
+  padding-bottom: 6px;
+  margin-top: 40px;
+}
+
+.markdown-section h3 {
+  font-size: 12px;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  opacity: 0.55;
+  margin-top: 28px;
+}
+
+.markdown-section a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.1s;
+}
+
+.markdown-section a:hover {
+  border-bottom-color: var(--accent);
+}
+
+.markdown-section strong {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.markdown-section blockquote {
+  border-left: 3px solid var(--accent);
+  background: rgba(0,0,0,0.03);
+  margin: 0 0 18px;
+  padding: 10px 16px;
+  color: var(--ink-soft);
+  font-size: 13px;
+}
+
+.markdown-section blockquote p {
+  margin: 0;
+}
+
+/* ─── Tables ──────────────────────────────────────────────────────── */
+.markdown-section table {
+  font-size: 13px;
+  border-collapse: collapse;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.markdown-section table th {
+  background: rgba(0,0,0,0.06);
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  font-size: 11px;
+  text-transform: uppercase;
+  padding: 8px 12px;
+  border: 1px solid rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+.markdown-section table td {
+  padding: 7px 12px;
+  border: 1px solid rgba(0,0,0,0.12);
+  vertical-align: top;
+}
+
+.markdown-section table tr:nth-child(even) td {
+  background: rgba(0,0,0,0.02);
+}
+
+/* ─── Code ────────────────────────────────────────────────────────── */
+.markdown-section code {
+  font-family: var(--mono);
+  font-size: 12.5px;
+  background: rgba(0,0,0,0.06);
+  border: 1px solid rgba(0,0,0,0.1);
+  border-radius: 2px;
+  padding: 1px 5px;
+  color: var(--ink);
+}
+
+.markdown-section pre {
+  background: #1c1a16;
+  border: 1px solid rgba(0,0,0,0.3);
+  border-radius: 2px;
+  padding: 16px 20px;
+  overflow-x: auto;
+}
+
+.markdown-section pre code {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 13px;
+  color: #e8e4dc;
+  line-height: 1.65;
+}
+
+/* ─── Highlight utility classes ───────────────────────────────────── */
+/* Text color highlights — use as: <span class="hi-red">text</span>  */
+.hi-red    { color: #c8392e; font-weight: 600; }
+.hi-blue   { color: #2563ac; font-weight: 600; }
+.hi-green  { color: #2a7a3b; font-weight: 600; }
+.hi-orange { color: #c47a1a; font-weight: 600; }
+
+/* Background highlights */
+.bg-red    { background: rgba(200,57,46,0.12);  padding: 1px 4px; border-radius: 2px; }
+.bg-blue   { background: rgba(37,99,172,0.12);  padding: 1px 4px; border-radius: 2px; }
+.bg-green  { background: rgba(42,122,59,0.12);  padding: 1px 4px; border-radius: 2px; }
+.bg-yellow { background: rgba(220,175,0,0.22);  padding: 1px 4px; border-radius: 2px; }
+
+/* Semantic CNC classes */
+.axis   { color: #2563ac; font-weight: 700; }
+.gcode  { color: #c8392e; font-weight: 700; }
+.param  { color: #2a7a3b; font-weight: 600; }
+.caution {
+  display: inline-block;
+  background: rgba(220,175,0,0.2);
+  border-left: 3px solid #c47a1a;
+  padding: 4px 10px;
+  font-size: 13px;
+  margin: 4px 0;
+}

@@ -3,8 +3,8 @@
   --paper: #f6f3ec;
   --paper-sidebar: #ede9df;
   --ink: #111111;
-  --ink-soft: #555;
-  --accent: #c8392e;
+  --ink-soft: #454545;
+  --accent: #1f1ce1;
   --mono: "JetBrains Mono", monospace;
 
   /* Docsify theme overrides */
@@ -135,7 +135,7 @@ body {
 }
 
 .markdown-section {
-  max-width: 820px;
+  max-width: 1000px;
   font-family: var(--mono);
   font-size: 14px;
   line-height: 1.75;

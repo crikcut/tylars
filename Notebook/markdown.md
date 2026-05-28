@@ -137,7 +137,7 @@ Normal Text<sub>subscript text</sub>
 
 These are CSS classes defined in `style.css`. To use them, wrap the text you want to color in an HTML `<span>` tag with the class name — you can drop this directly into any `.md` file and Docsify will render it:
 
-Here is some normal text with a <span class="hi-red">red highlighted word</span> in the middle.    
+Here is some normal text with <span class="hi-red">red highlighted words</span> in the middle.    
 
 
 ### Text color

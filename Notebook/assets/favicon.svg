@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 56 40">
+  <style>
+    .s { stroke: #111111; }
+    @media (prefers-color-scheme: dark) { .s { stroke: #ffffff; } }
+  </style>
+  <path class="s" d="M2 2 H44 L54 12 V38 H2 Z" fill="none" stroke-width="1.6"/>
+  <line class="s" x1="44" y1="2" x2="44" y2="12" stroke-width="1"/>
+  <line class="s" x1="44" y1="12" x2="54" y2="12" stroke-width="1"/>
+  <path class="s" d="M8 11 H24 M16 11 V32" stroke-width="3" stroke-linecap="square" fill="none"/>
+  <path class="s" d="M28 11 V32 H44" stroke-width="3" stroke-linecap="square" fill="none"/>
+</svg>

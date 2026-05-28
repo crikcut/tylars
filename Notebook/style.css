@@ -39,7 +39,7 @@ body {
 
 .sidebar > h1.app-name {
   font-family: var(--mono);
-  font-size: 13px;
+  font-size: 10px;
   font-weight: 700;
   letter-spacing: 0.08em;
   padding: 20px 18px 16px;
@@ -66,7 +66,7 @@ body {
 
 .sidebar-nav ul li a {
   color: var(--ink-soft);
-  padding: 5px 18px;
+  padding: 0px 18px;
   display: block;
 }
 
@@ -79,7 +79,7 @@ body {
 
 .sidebar-nav > ul > li > p,
 .sidebar-nav > ul > li > strong {
-  font-size: 10px;
+  font-size: 12px;
   letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--ink);

@@ -127,6 +127,10 @@ Docsify passes raw HTML through, so you can mix it in freely:
 
 ```
 
+<kbd>Ctrl+S</kbd>    
+Normal Text<sup>superscript text</sup>    
+Normal Text<sub>subscript text</sub>      
+
 
 
 ## Custom Highlight Classes

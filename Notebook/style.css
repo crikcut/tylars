@@ -66,12 +66,8 @@ body {
 
 .sidebar-nav ul li a {
   color: var(--ink-soft);
-<<<<<<< Updated upstream
+  font-size: 10px;
   padding: 0px 18px;
-=======
-  font-size: 12px;
-  padding: 5px 18px;
->>>>>>> Stashed changes
   display: block;
 }
 

@@ -1,5 +1,8 @@
 * [Home](/)
 
+* **Calculators**
+  * [Feeds & Speeds](calculator)
+
 * **G-Code**
   * [Overview](gcode/)
   * [Quick Reference](gcode/quick-reference)

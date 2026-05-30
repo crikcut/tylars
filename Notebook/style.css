@@ -288,3 +288,147 @@ body {
   font-size: 10px;
   margin: 4px 0;
 }
+
+/* ─── Feeds & Speeds Calculator ───────────────────────────────── */
+#sf-calc {
+  font-family: var(--mono);
+  font-size: 10px;
+  margin-top: 24px;
+}
+
+.sf-tabs {
+  display: flex;
+  gap: 0;
+  border-bottom: 1.5px solid var(--ink);
+  margin-bottom: 24px;
+}
+
+.sf-tab {
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  background: transparent;
+  border: 1.5px solid var(--ink);
+  border-bottom: none;
+  color: var(--ink-soft);
+  padding: 6px 20px;
+  cursor: pointer;
+  margin-bottom: -1.5px;
+}
+
+.sf-tab.active {
+  background: var(--paper);
+  color: var(--ink);
+  border-bottom: 1.5px solid var(--paper);
+}
+
+.sf-panel {
+  display: none;
+  padding-bottom: 32px;
+}
+
+.sf-panel.active {
+  display: block;
+}
+
+.sf-blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+}
+
+.sf-block {
+  border: 1px solid rgba(0,0,0,0.18);
+  padding: 18px 20px;
+  background: rgba(0,0,0,0.015);
+}
+
+.sf-block-label {
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  opacity: 0.45;
+  margin-bottom: 14px;
+}
+
+.sf-field {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 8px;
+  gap: 12px;
+}
+
+.sf-field label {
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.sf-field input {
+  font-family: var(--mono);
+  font-size: 11px;
+  background: var(--paper);
+  border: 1px solid rgba(0,0,0,0.2);
+  color: var(--ink);
+  padding: 5px 8px;
+  width: 120px;
+  text-align: right;
+  -moz-appearance: textfield;
+}
+
+.sf-field input::-webkit-outer-spin-button,
+.sf-field input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+
+.sf-field input:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.sf-result {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  border-top: 1px solid rgba(0,0,0,0.15);
+  margin-top: 12px;
+  padding-top: 10px;
+  gap: 12px;
+}
+
+.sf-result-label {
+  font-size: 9px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.sf-result-value {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ink-soft);
+  letter-spacing: -0.01em;
+}
+
+.sf-result.ready .sf-result-value {
+  color: var(--accent);
+}
+
+.sf-formula {
+  font-size: 9px;
+  opacity: 0.4;
+  letter-spacing: 0.04em;
+  margin-top: 6px;
+  text-align: right;
+}
+
+.sf-divider {
+  border-top: 1px dashed rgba(0,0,0,0.2);
+  margin: 18px 0;
+}

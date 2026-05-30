@@ -31,6 +31,74 @@
         noData: 'no results',
         depth: 4,
       },
+      plugins: [
+        function(hook) {
+          hook.doneEach(function() {
+            if (!document.getElementById('sf-calc')) return;
+
+            function sfm(rpm, dia) {
+              if (!rpm || !dia || rpm <= 0 || dia <= 0) return null;
+              return ((Math.PI * dia * rpm) / 12).toFixed(1);
+            }
+            function rpm(s, dia) {
+              if (!s || !dia || s <= 0 || dia <= 0) return null;
+              return Math.round((s * 12) / (Math.PI * dia));
+            }
+            function feed(r, flutes, chipload) {
+              if (!r || !flutes || !chipload || r <= 0 || flutes <= 0 || chipload <= 0) return null;
+              return (r * flutes * chipload).toFixed(4);
+            }
+
+            function val(id) {
+              var el = document.getElementById(id);
+              return el ? parseFloat(el.value) : NaN;
+            }
+            function set(id, v) {
+              var el = document.getElementById(id);
+              if (!el) return;
+              el.textContent = v !== null ? v : '—';
+              el.classList.toggle('ready', v !== null);
+            }
+
+            function wire(inputIds, fn) {
+              inputIds.forEach(function(id) {
+                var el = document.getElementById(id);
+                if (el) el.addEventListener('input', fn);
+              });
+              fn();
+            }
+
+            wire(['t1-rpm','t1-dia'], function() {
+              set('t1-sfm', sfm(val('t1-rpm'), val('t1-dia')));
+            });
+            wire(['t2-sfm','t2-dia'], function() {
+              set('t2-rpm', rpm(val('t2-sfm'), val('t2-dia')));
+            });
+            wire(['m1-rpm','m1-dia'], function() {
+              set('m1-sfm', sfm(val('m1-rpm'), val('m1-dia')));
+            });
+            wire(['m1-rpm','m1-flutes','m1-chipload'], function() {
+              set('m1-feed', feed(val('m1-rpm'), val('m1-flutes'), val('m1-chipload')));
+            });
+            wire(['m2-sfm','m2-dia'], function() {
+              set('m2-rpm', rpm(val('m2-sfm'), val('m2-dia')));
+            });
+            wire(['m2-sfm','m2-dia','m2-flutes','m2-chipload'], function() {
+              set('m2-feed', feed(rpm(val('m2-sfm'), val('m2-dia')), val('m2-flutes'), val('m2-chipload')));
+            });
+
+            document.querySelectorAll('#sf-calc .sf-tab').forEach(function(tab) {
+              tab.addEventListener('click', function() {
+                document.querySelectorAll('#sf-calc .sf-tab').forEach(function(t) { t.classList.remove('active'); });
+                document.querySelectorAll('#sf-calc .sf-panel').forEach(function(p) { p.classList.remove('active'); });
+                tab.classList.add('active');
+                var panel = document.getElementById(tab.dataset.panel);
+                if (panel) panel.classList.add('active');
+              });
+            });
+          });
+        }
+      ],
     };
   </script>
   <script src="https://cdn.jsdelivr.net/npm/docsify@4/lib/docsify.min.js"></script>

@@ -379,7 +379,7 @@ body {
   padding: 5px 8px;
   width: 120px;
   text-align: right;
-  -moz-appearance: textfield;
+  appearance: textfield;
 }
 
 .sf-field input::-webkit-outer-spin-button,

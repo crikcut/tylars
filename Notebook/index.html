@@ -108,7 +108,7 @@
     Prism.languages.gcode['property'] = /[A-Z]-?(?:\d+(?:\.\d+)?|\.\d+)/;
     Prism.languages.insertBefore('gcode', 'property', {
       'sequence': /N\d+/,
-      'axis-z':   /Z-?(?:\d+(?:\.\d+)?|\.\d+)/,
+      'axis-z':   /[ZW]-?(?:\d+(?:\.\d+)?|\.\d+)/,
       'axis-xy':  /[XY]-?(?:\d+(?:\.\d+)?|\.\d+)/,
       'feedrate': /[FSR]-?(?:\d+(?:\.\d+)?|\.\d+)/,
     });

@@ -282,8 +282,8 @@ body {
 .param  { color: #6b6b6b; font-weight: 600; }
 .caution {
   display: inline-block;
-  background: rgba(220,175,0,0.2);
-  border-left: 3px solid #c47a1a;
+  background: rgba(0, 147, 220, 0.229);
+  border-left: 3px solid #a09f9f;
   padding: 4px 10px;
   font-size: 10px;
   margin: 4px 0;
@@ -292,7 +292,7 @@ body {
 .token.comment    { color: #a09f9f; font-style: italic; }
 .token.keyword    { color: #24aae8; }  /* G/M codes */
 .token.sequence   { color: #27bb45; }  /* N numbers */
-.token.axis-z     { color: #c92b2b; }  /* Z moves */
+.token.axis-z     { color: #df2424; }  /* Z moves */
 .token.axis-xy    { color: #2563ac; }  /* X/Y moves */
 .token.feedrate   { color: #f51ecd; }  /* F/S words */
 .token.property   { color: #bbbbba; }  /* everything else */

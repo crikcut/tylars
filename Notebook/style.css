@@ -290,11 +290,11 @@ body {
 }
 
 .token.comment { color: #4d4d4dfa; }
-.token.string { color: #f6f3ec; }
-.token.keyword { color: #0404ff; }
-.token.property { color: #ff0404; }
-.token.number { color: #f6f3ec; }
-.token.punctuation { color: #f6f3ec; }
+.token.string { color: #ff0000; }
+.token.keyword { color: #f704ff; }
+.token.property { color: #04ff15; }
+.token.number { color: #01d0ff; }
+.token.punctuation { color: #01d0ff; }
 
 
 /* ─── Feeds & Speeds Calculator ───────────────────────────────── */

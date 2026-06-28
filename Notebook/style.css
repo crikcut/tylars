@@ -293,7 +293,7 @@ body {
 .token.keyword    { color: #24aae8; }  /* G/M codes */
 .token.sequence   { color: #27bb45; }  /* N numbers */
 .token.axis-z     { color: #df2424; }  /* Z moves */
-.token.axis-xy    { color: #2563ac; }  /* X/Y moves */
+.token.axis-xy    { color: #24aae8; }  /* X/Y moves */
 .token.feedrate   { color: #f51ecd; }  /* F/S words */
 .token.property   { color: #a09f9f; }  /* everything else */
 

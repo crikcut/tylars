@@ -289,12 +289,13 @@ body {
   margin: 4px 0;
 }
 
-.token.comment { color: #4d4d4dfa; }
-.token.string { color: #ff0000; }
-.token.keyword { color: #f704ff; }
-.token.property { color: #04ff15; }
-.token.number { color: #01d0ff; }
-.token.punctuation { color: #01d0ff; }
+.token.comment    { color: #6b6b6b; font-style: italic; }
+.token.keyword    { color: #c8392e; }  /* G/M codes */
+.token.sequence   { color: #454545; }  /* N numbers */
+.token.axis-z     { color: #c47a1a; }  /* Z moves */
+.token.axis-xy    { color: #2563ac; }  /* X/Y moves */
+.token.feedrate   { color: #2a7a3b; }  /* F/S words */
+.token.property   { color: #e8e4dc; }  /* everything else */
 
 
 /* ─── Feeds & Speeds Calculator ───────────────────────────────── */

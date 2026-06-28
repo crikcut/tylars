@@ -278,8 +278,8 @@ body {
 
 /* Semantic CNC classes */
 .axis   { color: #2563ac; font-weight: 700; }
-.gcode  { color: #c8392e; font-weight: 700; }
-.param  { color: #2a7a3b; font-weight: 600; }
+.gcode  { color: #24aae8; font-weight: 700; }
+.param  { color: #6b6b6b; font-weight: 600; }
 .caution {
   display: inline-block;
   background: rgba(220,175,0,0.2);
@@ -290,11 +290,11 @@ body {
 }
 
 .token.comment    { color: #6b6b6b; font-style: italic; }
-.token.keyword    { color: #c8392e; }  /* G/M codes */
-.token.sequence   { color: #454545; }  /* N numbers */
-.token.axis-z     { color: #c47a1a; }  /* Z moves */
+.token.keyword    { color: #24aae8; }  /* G/M codes */
+.token.sequence   { color: #27bb45; }  /* N numbers */
+.token.axis-z     { color: #c92b2b; }  /* Z moves */
 .token.axis-xy    { color: #2563ac; }  /* X/Y moves */
-.token.feedrate   { color: #2a7a3b; }  /* F/S words */
+.token.feedrate   { color: #f51ecd; }  /* F/S words */
 .token.property   { color: #e8e4dc; }  /* everything else */
 
 

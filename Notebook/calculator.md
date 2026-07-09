@@ -57,9 +57,10 @@
 
 
 
-----
+
 
 # Speeds / Feeds
+
 
 | Material | SFM HSS | SFM Carbide | Feed Range |
 |------|-------------|---------|---------|

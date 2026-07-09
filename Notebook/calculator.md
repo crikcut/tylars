@@ -64,7 +64,7 @@
 
 | Material | SFM HSS | SFM Carbide | Feed Range |
 |------|-------------|---------|---------|
-| 316 Stainless | 40 - 60 sfm | 200 - 300 sfm | .004 - .016 ipr |
+| 316 Stainless | `40 - 60 sfm` | `200 - 300 sfm` | `.004 - .016 ipr` |
 | `G01` | Linear interpolation (feed) | `G01 X1.5 Y2.0 F20.` | |
 | `G02` | Circular interpolation CW | `G02 X1. Y0 I0.5 J0` | |
 | `G03` | Circular interpolation CCW | `G03 X1. Y0 I0.5 J0` | |

@@ -1,6 +1,6 @@
 # Roughing Cycles
 
-## G71
+### G71 - FANUC
 
 - Roughing cycle that can be used on OD and ID turning.
 
@@ -47,8 +47,58 @@ Q=NUMBER FINISH
 
 ```
 
+(--------------------------)    
 
-## G75
+### G74 - HAAS
+
+- Rough OD Turn Cycle    
+  - Can also be used as peck drilling operation    
+ 
+X = X FINISHED DIAMETER    
+Z = Z FINISHED DEPTH    
+I = X INCREMENT BETWEEN PECK CYCLES    
+K = Z PECK DISTANCE    
+
+```gcode
+
+(G74 EXAMPLE)
+
+N1 T101 (WNMG - FACE - R TURN) 
+G50 S1800 
+G96 S600 M03 
+/ M08 
+G00 G99 G54 Z0.3 
+X3.8 Z0.01 
+G01 X1.8 F0.004 
+G00 X3.76 Z0.1 (X AND Z START POSITION)
+
+G74 X3.26 Z-2.38 I0.05 K0.2 F0.008
+
+(TURNS DOWN .5" USING A .2" PECK IN THE Z AND EACH PASS IS .05" IN X)
+
+G00 X6. Z6. M09 
+G97 S400 M03 
+G00 G28 U0 
+M01
+
+(G74 EXAMPLE TWO)
+
+N9 T909 (CCMT3251 - HTM15 INSERT) 
+(ROUGH .72 HOLE) 
+G50 S1800 
+G96 S800 M03 
+G00 G54 Z0.2 
+/ M08 
+X0.51 
+Z-1. 
+G74 X0.71 Z-1.748 I0.025 K0.05 F0.008 
+G00 Z2. M09 
+G00 G28 U0. M05 
+M01 
+
+```
+
+### G75 - HAAS
 
 - Rough facing cycle    
 
@@ -79,4 +129,6 @@ G00 X12.5 Z0.5
 G00 G28 U0 M09 
 G00 G53 Z-6. 
 M05 
-M01 
+M01
+
+```

@@ -64,7 +64,7 @@
 
 | Material | SFM HSS | SFM Carbide | Feed Range |
 |------|-------------|---------|---------|
-| 316 Stainless | `40 - 60 sfm` | `200 - 300 sfm` | `.004 - .016 ipr` |
+| 316 Stainless | 40 - 60 sfm | 200 - 300 sfm | .004 - .016 ipr |
 
 ## 17/4 Feeds and speeds by condition
 | Condition	| Turning SFM |	Turning IPR |	Milling SFM |	Chip load per tooth (in) |    
